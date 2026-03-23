@@ -4,6 +4,14 @@ A portfolio project demonstrating **hexagonal architecture** with runtime-swappa
 
 AI models, databases, and UI adapters can be switched while the application is running — without restarting or modifying core logic.
 
+## Architecture
+
+![Architecture overview](docs/architecture.svg)
+
+## Data flow
+
+![Data flow](docs/dataflow.svg)
+
 ## Repositories
 
 | Repository | Description |
