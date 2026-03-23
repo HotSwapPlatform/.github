@@ -1,0 +1,85 @@
+<svg width="100%" viewBox="0 0 680 460" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+<style>
+text { font-family: Arial, sans-serif; fill: #333; }
+.th { font-size: 14px; font-weight: 500; }
+.ts { font-size: 12px; }
+.c-purple rect { fill: #EEEDFE; stroke: #534AB7; }
+.c-purple text { fill: #3C3489; }
+.c-teal rect { fill: #E1F5EE; stroke: #0F6E56; }
+.c-teal text { fill: #085041; }
+.c-amber rect { fill: #FAEEDA; stroke: #854F0B; }
+.c-amber text { fill: #633806; }
+.c-coral rect { fill: #FAECE7; stroke: #993C1D; }
+.c-coral text { fill: #712B13; }
+.c-gray rect { fill: #F1EFE8; stroke: #5F5E5A; }
+.c-gray text { fill: #444441; }
+.arr { stroke: #888780; stroke-width: 1.2; fill: none; }
+</style>
+</defs>
+
+<g class="c-gray">
+  <rect x="40" y="190" width="140" height="72" rx="10" stroke-width="0.5"/>
+  <text class="th" x="110" y="216" text-anchor="middle" dominant-baseline="central">Taustapalvelu</text>
+  <text class="ts" x="110" y="236" text-anchor="middle" dominant-baseline="central">FakeBackgroundSource</text>
+  <text class="ts" x="110" y="252" text-anchor="middle" dominant-baseline="central">Syöttää viestejä</text>
+</g>
+
+<line x1="182" y1="226" x2="228" y2="226" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="205" y="218" text-anchor="middle" fill="#888780">Message</text>
+
+<g class="c-purple">
+  <rect x="230" y="160" width="160" height="132" rx="10" stroke-width="0.5"/>
+  <text class="th" x="310" y="190" text-anchor="middle" dominant-baseline="central">Core domain</text>
+  <text class="ts" x="310" y="212" text-anchor="middle" dominant-baseline="central">MessageService</text>
+  <text class="ts" x="310" y="232" text-anchor="middle" dominant-baseline="central">1. Vastaanottaa viestin</text>
+  <text class="ts" x="310" y="252" text-anchor="middle" dominant-baseline="central">2. Pyytää AI-vastauksen</text>
+  <text class="ts" x="310" y="272" text-anchor="middle" dominant-baseline="central">3. Tallentaa ja lähettää</text>
+</g>
+
+<g class="c-amber">
+  <rect x="500" y="60" width="140" height="50" rx="10" stroke-width="0.5"/>
+  <text class="th" x="570" y="78" text-anchor="middle" dominant-baseline="central">AI-adapteri</text>
+  <text class="ts" x="570" y="96" text-anchor="middle" dominant-baseline="central">Ollama / Dummy</text>
+</g>
+
+<path d="M390 180 L445 180 L445 85 L500 85" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="416" y="172" text-anchor="middle" fill="#888780">prompt</text>
+
+<path d="M570 110 L570 250 L390 250" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="582" y="185" text-anchor="start" fill="#888780">response</text>
+
+<line x1="390" y1="268" x2="496" y2="318" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="450" y="286" text-anchor="middle" fill="#888780">Message</text>
+
+<rect x="498" y="298" width="140" height="110" rx="10" fill="none" stroke="#D3D1C7" stroke-width="0.5" stroke-dasharray="4 3"/>
+<text class="ts" x="568" y="292" text-anchor="middle" fill="#888780">Käyttöliittymä</text>
+
+<g class="c-teal">
+  <rect x="508" y="306" width="120" height="28" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="568" y="323" text-anchor="middle" dominant-baseline="central">React SPA</text>
+</g>
+<g class="c-teal">
+  <rect x="508" y="342" width="120" height="28" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="568" y="359" text-anchor="middle" dominant-baseline="central">Thymeleaf</text>
+</g>
+<g class="c-teal">
+  <rect x="508" y="378" width="120" height="24" rx="6" stroke-width="0.5"/>
+  <text class="ts" x="568" y="393" text-anchor="middle" dominant-baseline="central">Swing</text>
+</g>
+
+<g class="c-coral">
+  <rect x="230" y="330" width="160" height="44" rx="8" stroke-width="0.5"/>
+  <text class="th" x="310" y="346" text-anchor="middle" dominant-baseline="central">DB-adapteri</text>
+  <text class="ts" x="310" y="364" text-anchor="middle" dominant-baseline="central">JPA · PostgreSQL / H2</text>
+</g>
+
+<line x1="310" y1="294" x2="310" y2="328" class="arr" marker-end="url(#arrow)"/>
+<text class="ts" x="325" y="314" text-anchor="start" fill="#888780">tallentaa</text>
+
+<text class="ts" x="110" y="178" text-anchor="middle" fill="#B4B2A9">① syöttää</text>
+<text class="ts" x="310" y="148" text-anchor="middle" fill="#B4B2A9">② käsittelee</text>
+<text class="ts" x="570" y="48" text-anchor="middle" fill="#B4B2A9">③ AI vastaa</text>
+<text class="ts" x="568" y="280" text-anchor="middle" fill="#B4B2A9">④ näyttää</text>
+</svg>
