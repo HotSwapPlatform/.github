@@ -1,6 +1,6 @@
 # HotSwap Platform
 
-A portfolio project demonstrating **hexagonal architecture** with runtime-swappable adapters built on Spring Boot 4 and Java 25.
+A portfolio project demonstrating **hexagonal architecture** with runtime-swappable adapters built on Spring Boot 4 and Java 21.
 
 AI models, databases, and UI adapters can be switched while the application is running — without restarting or modifying core logic.
 
