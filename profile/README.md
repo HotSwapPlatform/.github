@@ -16,8 +16,10 @@ AI models, databases, and UI adapters can be switched while the application is r
 
 | Repository | Description |
 |------------|-------------|
-| [hotswap-platform-core](https://github.com/HotSwapPlatform/hotswap-platform-core) | Spring Boot backend — hexagonal architecture, ports and adapters, Spring AI, TDD |
-| [hotswap-platform-ui](https://github.com/HotSwapPlatform/hotswap-platform-ui) | React + TypeScript management console — adapter control, real-time status polling |
+| [hotswap-platform-ui](https://github.com/HotSwapPlatform/hotswap-platform-ui) | React + TypeScript console — adapter control, real-time status polling |
+| [hotswap-framework](https://github.com/HotSwapPlatform/hotswap-framework) | Reusable library; ports and adapters pattern |
+| [hotswap-postgis-railways](https://github.com/HotSwapPlatform/hotswap-postgis-railways) | railway station map application; PostGIS, Leaflet, Thymeleaf, Spring JDBC; Aineisto: [Digitraffic / Fintraffic](https://www.digitraffic.fi/) [(CC 4.0 BY)](https://creativecommons.org/licenses/by/4.0/deed.fi) |
+| [hotswap-finance-ai](https://github.com/HotSwapPlatform/hotswap-finance-ai) | finance + AI demo application; Spring Boot backend — hexagonal architecture, ports and adapters, Spring AI, TDD |
 
 ## Author
 
